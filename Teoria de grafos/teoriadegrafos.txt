@@ -1,0 +1,31 @@
+Introduccion.
+¿Que es ?
+    Una dorama de representar y modelar relaciones entre conjuntos de datos, se utiliza pra modela un nunmero muy grande de probleams diversos 
+Ejemplo: 
+    Una red que represente le numero de personas que conocen a otras, con esto se peude ver facilmente la relacion de cada persona y con quien se relaciona
+Partes de un grafo:
+    Vertices: La pieza fundamental, indica la entidad
+    Aristas: Lineas que conectan los veritices
+Tipos de graficos:
+    Grafo no dirijido: Los arcos no tienen orientacion, el arco que conecta u,v es el musmo que conecta v,u es decir, el arco que conecta el 0 con el 5, es el mismo que conecta el 5 con el 0
+    Grafo dirijido: Los arcos tiene una orientacion, el que conecta u,v, es decir, tienen una direccion establecida
+    Grafos con peso: los arcos tienen un peso especifico, el cual puede hacer diferencia a otra cosa
+    Grafos especiales:
+        Arboles: un arco no dirijido sin ciclos
+        Arboles con raiz: grafos dirijidos que poseen un vertice con el cual se llega a los otros Vertices
+        Grafos aciclicos dirijidos: Grafos dirijidos sin ciclos 
+        Grafos bipartitos: Se dividen los vertices en 2 grupos, un vertice de un grupo, se puede conctar con 2 o mas vertices del mismo grupo, por lo qe un vertice del mismo grupo, no se puede conectar con otro vertice del mismo grpo directamente
+
+Formas de representar grafos:
+    Matriz de adyacencia:
+        En una tabla con filas y columnas, cada valos de las filas y de las columnas es un vertice, y cada espacio dentro de la tabla (matriz) es el peso del arco
+        Ejemplo, conectar el vertice a, con el vertice a, tiene un peso de 0 porque no existe ese camino 
+        En cambio, conectar el vertice a, con el vertice b tiene n valor de 1, porque el arco que los conecta tiene u npeso de 1
+        En caso de no tener peso, si hay camino es 1, si no hay camino es 0
+        El peso depende del contexto en le uqe se este trabajando, puede represntar distancia, dinero, tiempo, establecida
+    Lista adyacente:
+        Se crea una lista para cada vertice donde se almacenan tuplas que contienen el vértice de destino y el peso que contiene el arco que lleva a el
+        Ejemplo, A->[B,1] nos dice que iniciando del vertice a para ir al vertice B, nos cuesta 1
+        A->[C,4] nos dice que para ir del vertice a al vertice C cuesta 4 
+    
+ 
