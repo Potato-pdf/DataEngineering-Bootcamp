@@ -6,9 +6,11 @@ class directed_graph:
             return "Vertex already in graph"
         self.graph[vertex] = []
     def add_edge(self, edge):
-        # You can implement edge addition logic here
-        # For now, just pass to avoid syntax errors
-        pass
+        start = edge.get_start()
+        end = edge.get_end()
+        if start not in self.graph or end not in self.graph:
+            raise ValueError(f"Vertex {start.get_name()} or {end.get_name()} not in graph")
+        self.graph[start].append(end)
 
 class edge:
     def __init__(self, start, end):
