@@ -1,0 +1,8 @@
+¿Que es?
+    Framework para desarollo de aplciaciones indica
+¿Porque es nesesario?
+    Sirve para alimentar al modelo con la informacion que queremos que utilice
+    Ayuda a mantener en memoria lo cual ayuda muchisimo a ahorrar tokens
+    
+Flujo:
+    Recurso->Carga al modelo->Se transforma->Se vectoriza->Se almacena->Se muestra la informacion para alimentar al modelo
